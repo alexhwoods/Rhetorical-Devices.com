@@ -1,5 +1,6 @@
 ---
 const { content } = Astro.props;
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -11,12 +12,15 @@ const { content } = Astro.props;
   </head>
   <body class="font-serif flex justify-center min-h-screen">
     <div
-      class="container lg:mx-auto mx-2 max-w-prose border-2 border-purple-400"
+      class="container lg:mx-auto mx-3 max-w-prose lg:max-w-screen-lg lg:mx-48"
     >
-      <div class="text-center my-6">
+      <div class="mt-6">
+        <Button>Home</Button>
+      </div>
+      <div class="text-center mt-4 mb-4 lg:mb-8">
         <h1 class="h1 lg:text-5xl text-3xl">{content.title}</h1>
       </div>
-      <div class="prose border-2 border-red-500 text-lg">
+      <div class="prose text-lg">
         <slot />
       </div>
     </div>

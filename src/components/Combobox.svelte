@@ -1,4 +1,9 @@
 <script lang="ts">
+  // TODO:
+  /**
+   * 1. Weird break between contents and input on ipad
+   */
+
   import { Combobox } from "bits-ui";
 
   const rhetoricalDevices = [
