@@ -5,10 +5,10 @@ layout: ../layouts/rhetorical-device.astro
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit. Urna neque viverra justo nec ultrices dui. Nisl purus in mollis nunc sed id. Nunc pulvinar sapien et ligula. Nulla porttitor massa id neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Diam maecenas sed enim ut. Ornare quam viverra orci sagittis. Neque vitae tempus quam pellentesque nec. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Nisl purus in mollis nunc.
 
-- Braves
-- Red Sox
-- Yankees
-- Royals
+- Massa tincidunt nunc pulvinar sapien et. Tempus iaculis urna id volutpat lacus. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Diam vulputate ut pharetra sit.
+- Massa tincidunt nunc pulvinar sapien et. Tempus iaculis urna id volutpat lacus. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Diam vulputate ut pharetra sit. Sox
+- Massa tincidunt nunc pulvinar sapien et. Tempus iaculis urna id volutpat lacus. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Diam vulputate ut pharetra sit. Sit amet porttitor eget dolor. Pulvinar pellentesque habitant morbi tristique senectus et.
+- Massa tincidunt nunc pulvinar sapien et. Tempus iaculis urna id volutpat lacus. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Diam vulputate ut pharetra sit.
 
 Massa tincidunt nunc pulvinar sapien et. Tempus iaculis urna id volutpat lacus. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Diam vulputate ut pharetra sit. Sit amet porttitor eget dolor. Pulvinar pellentesque habitant morbi tristique senectus et. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Suscipit tellus mauris a diam maecenas sed enim. Duis ultricies lacus sed turpis tincidunt id aliquet. Eu feugiat pretium nibh ipsum. Arcu non odio euismod lacinia at quis risus sed.
 

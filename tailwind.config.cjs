@@ -49,11 +49,57 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", ...fontFamily.sans],
-        mono: ["Source Code Pro", ...fontFamily.mono],
-        alt: ["Courier", ...fontFamily.sans],
         serif: ["Libre Baskerville", ...fontFamily.serif],
       },
+      // typography: ({ theme }) => ({
+      //   DEFAULT: {
+      //     css: {
+      //       p: {
+      //         color: theme("colors.nord.3"),
+      //         lineHeight: theme("lineHeight.relaxed"),
+      //       },
+      //       a: {
+      //         color: theme("colors.primary.700"),
+      //         "&:hover": {
+      //           color: `${theme("colors.primary.600")}`,
+      //         },
+      //         code: { color: theme("colors.primary.400") },
+      //       },
+      //       "h1,h2": {
+      //         // @fixme: this is cheating! I want colors.nord.3,
+      //         // but it's not supported here for some reason.ddd
+      //         color: "#4C566A",
+      //         fontWeight: "700",
+      //         letterSpacing: theme("letterSpacing.tight"),
+      //       },
+      //       h3: {
+      //         // @fixme: this is cheating! I want colors.nord.3
+      //         color: "#4C566A",
+      //         fontWeight: "600",
+      //       },
+      //       h4: {
+      //         // @fixme: this is cheating! I want colors.nord.3
+      //         color: "#4C566A",
+      //       },
+      //       strong: { color: "#4C566A" },
+      //       italics: { color: "#4C566A" },
+      //       // strong italics
+      //       "strong italics": { color: "#4C566A" },
+      //       // bulk quote
+      //       blockquote: {
+      //         color: "#4C566A",
+      //       },
+      //       details: {
+      //         summary: {
+      //           color: "#4C566A",
+      //         },
+      //         ul: {
+      //           marginTop: "0.5rem",
+      //         },
+      //       },
+      //     },
+      //   },
+      // }),
       fontSize: {
         xxs: "10px",
       },

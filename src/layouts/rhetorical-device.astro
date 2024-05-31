@@ -9,14 +9,22 @@ const { content } = Astro.props;
     <link rel="icon" type="image/jpg" href="/Shakespeare.jpg" />
     <title>{content.title}</title>
   </head>
-  <body class="font-serif">
-    <div class="mx-64 border-2 border-purple-400">
+  <body class="font-serif flex-col justify-center align-center">
+    <div class="lg:mx-64 mx-2 max-w-prose border-2 border-purple-400">
       <div class="text-center my-6">
-        <h1 class="h1 text-5xl">{content.title}</h1>
+        <h1 class="h1 lg:text-5xl text-3xl">{content.title}</h1>
       </div>
-      <div class="border-2 border-red-500 text-lg">
+      <div class="prose border-2 border-red-500 text-lg">
         <slot />
       </div>
     </div>
   </body>
 </html>
+
+<!-- @todo: handle wide monitor -->
+
+<style>
+  .prose {
+    max-width: none;
+  }
+</style>
