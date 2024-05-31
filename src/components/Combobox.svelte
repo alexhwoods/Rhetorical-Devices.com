@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Combobox } from "bits-ui";
-  import { flyAndScale } from "./transitions";
 
   const fruits = [
     { value: "mango", label: "Mango" },
@@ -12,6 +11,7 @@
 
   let inputValue = "";
   let touchedInput = false;
+  let contentIsOpen = false;
 
   $: filteredFruits =
     inputValue && touchedInput
@@ -19,7 +19,14 @@
       : fruits;
 </script>
 
-<Combobox.Root items={filteredFruits} bind:inputValue bind:touchedInput>
+<Combobox.Root
+  items={filteredFruits}
+  bind:inputValue
+  bind:touchedInput
+  onOpenChange={(isOpen) => {
+    contentIsOpen = isOpen;
+  }}
+>
   <div class="relative">
     <svg
       class="absolute start-4 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
@@ -36,7 +43,9 @@
       ></svg
     >
     <Combobox.Input
-      class="inline-flex h-input w-[504px] truncate rounded-t-3xl rounded-b-3xl focus:rounded-b-none bg-gray-100 px-10 text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
+      class="inline-flex h-input w-[504px] truncate rounded-t-3xl {contentIsOpen
+        ? 'rounded-b-none'
+        : 'rounded-b-3xl'} bg-gray-100 px-10 text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
       placeholder="Alliteration"
       aria-label="Choose a rhetorical device"
     />
@@ -63,5 +72,5 @@
       </span>
     {/each}
   </Combobox.Content>
-  <Combobox.HiddenInput name="favoriteFruit" />
+  <Combobox.HiddenInput class="border-red-500 border-2" name="favoriteFruit" />
 </Combobox.Root>
