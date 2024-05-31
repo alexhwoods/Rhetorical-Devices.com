@@ -2,6 +2,7 @@
 // Component Imports
 import Button from "../components/Button.astro";
 import HelloWorld from "../components/HelloWorld.svelte";
+import ComboBox from "../components/Combobox.svelte";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -18,9 +19,9 @@ import HelloWorld from "../components/HelloWorld.svelte";
 
   <body>
     <div class="grid place-items-center h-screen content-center">
-      <Button>Tailwind Button in Astro!</Button>
-      <HelloWorld />
-      <a href="/markdown-page" class="p-4 underline"
+      <ComboBox client:load />
+
+      <a href="/markdown-page" class="mt-[500px] p-4 underline"
         >Markdown is also supported...</a
       >
     </div>
