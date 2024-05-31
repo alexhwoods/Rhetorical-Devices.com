@@ -52,25 +52,28 @@
   </div>
 
   <Combobox.Content
-    class="w-full rounded-b-3xl bg-gray-100 px-1 py-3 outline-none"
+    class="w-full rounded-b-3xl bg-gray-100 outline-none"
     sideOffset={0}
   >
-    {#each filteredFruits as fruit (fruit.value)}
-      <Combobox.Item
-        class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none transition-all duration-75 data-[highlighted]:bg-muted font-serif"
-        value={fruit.value}
-        label={fruit.label}
-      >
-        {fruit.label}
-        <Combobox.ItemIndicator class="ml-auto" asChild={false}>
-          <!-- <Check /> -->
-        </Combobox.ItemIndicator>
-      </Combobox.Item>
-    {:else}
-      <span class="block px-5 py-2 text-lg text-muted-foreground">
-        No results found
-      </span>
-    {/each}
+    <div class="border-[1px] border-gray-400 ml-9 mr-4"></div>
+    <div class="px-1 pt-1 pb-2">
+      {#each filteredFruits as fruit (fruit.value)}
+        <Combobox.Item
+          class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none transition-all duration-75 data-[highlighted]:bg-muted font-serif"
+          value={fruit.value}
+          label={fruit.label}
+        >
+          {fruit.label}
+          <Combobox.ItemIndicator class="ml-auto" asChild={false}>
+            <!-- <Check /> -->
+          </Combobox.ItemIndicator>
+        </Combobox.Item>
+      {:else}
+        <span class="block px-5 py-2 text-lg font-serif text-muted-foreground">
+          No results found
+        </span>
+      {/each}
+    </div>
   </Combobox.Content>
   <Combobox.HiddenInput class="border-red-500 border-2" name="favoriteFruit" />
 </Combobox.Root>
