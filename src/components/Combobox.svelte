@@ -44,7 +44,6 @@
 
   <Combobox.Content
     class="w-full rounded-b-3xl bg-gray-100 px-1 py-3 outline-none"
-    transition={flyAndScale}
     sideOffset={0}
   >
     {#each filteredFruits as fruit (fruit.value)}
