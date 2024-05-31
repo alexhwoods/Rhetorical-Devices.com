@@ -51,7 +51,9 @@
     />
   </div>
 
-  <Combobox.Content class="w-full rounded-b-3xl bg-gray-100 outline-none">
+  <Combobox.Content
+    class="w-full rounded-b-3xl bg-gray-100 outline-none overflow-hidden"
+  >
     <div class="border-[1px] border-gray-400 ml-9 mr-4"></div>
     <div class="pt-1 pb-2">
       {#each filteredFruits as fruit (fruit.value)}
