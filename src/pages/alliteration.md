@@ -1,5 +1,7 @@
 ---
 title: "Alliteration"
+description: "Learn about alliteration, a literary device where the same consonant sound repeats at the beginning of nearby words, often used in poetry and prose for stylistic effect."
+keywords: "alliteration, rhetorical devices"
 layout: ../layouts/rhetorical-device.astro
 ---
 
