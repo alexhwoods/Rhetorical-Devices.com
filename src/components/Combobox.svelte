@@ -36,20 +36,20 @@
       ></svg
     >
     <Combobox.Input
-      class="inline-flex h-input w-[504px] truncate rounded-full bg-gray-100 px-10 text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
+      class="inline-flex h-input w-[504px] truncate rounded-t-3xl rounded-b-3xl focus:rounded-b-none bg-gray-100 px-10 text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
       placeholder="Alliteration"
       aria-label="Choose a rhetorical device"
     />
   </div>
 
   <Combobox.Content
-    class="w-full rounded-xl border border-muted bg-background-white-500 px-1 py-3 shadow-popover outline-none"
+    class="w-full rounded-b-3xl bg-gray-100 px-1 py-3 outline-none"
     transition={flyAndScale}
-    sideOffset={8}
+    sideOffset={0}
   >
     {#each filteredFruits as fruit (fruit.value)}
       <Combobox.Item
-        class="flex h-10 w-full select-none items-center rounded-button py-3 pl-5 pr-1.5 text-sm capitalize outline-none transition-all duration-75 data-[highlighted]:bg-muted"
+        class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none transition-all duration-75 data-[highlighted]:bg-muted font-serif"
         value={fruit.value}
         label={fruit.label}
       >
@@ -59,7 +59,7 @@
         </Combobox.ItemIndicator>
       </Combobox.Item>
     {:else}
-      <span class="block px-5 py-2 text-sm text-muted-foreground">
+      <span class="block px-5 py-2 text-lg text-muted-foreground">
         No results found
       </span>
     {/each}
