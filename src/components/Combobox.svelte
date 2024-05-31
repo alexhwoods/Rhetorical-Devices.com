@@ -53,10 +53,10 @@
 
   <Combobox.Content class="w-full rounded-b-3xl bg-gray-100 outline-none">
     <div class="border-[1px] border-gray-400 ml-9 mr-4"></div>
-    <div class="px-1 pt-1 pb-2">
+    <div class="pt-1 pb-2">
       {#each filteredFruits as fruit (fruit.value)}
         <Combobox.Item
-          class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none font-serif"
+          class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none font-serif hover:bg-blue-100 rounded-4"
           value={fruit.value}
           label={fruit.label}
         >
