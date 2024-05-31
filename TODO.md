@@ -1,0 +1,3 @@
+- [ ] Purge unwanted CSS
+- [ ] Do a production build and make sure it's tiny
+- [ ] SEO!!!
