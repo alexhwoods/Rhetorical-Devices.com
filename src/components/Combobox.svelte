@@ -22,7 +22,7 @@
 <Combobox.Root items={filteredFruits} bind:inputValue bind:touchedInput>
   <div class="relative">
     <svg
-      class="absolute start-3 top-1/2 size-6 -translate-y-1/2 text-muted-foreground"
+      class="absolute start-4 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
       id="Capa_1"
       enable-background="new 0 0 461.516 461.516"
       height="512"
@@ -36,13 +36,10 @@
       ></svg
     >
     <Combobox.Input
-      class="inline-flex h-input w-[296px] truncate rounded-9px border border-border-input bg-background px-11 text-sm transition-colors placeholder:text-foreground-alt/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background"
-      placeholder="Search a fruit"
-      aria-label="Search a fruit"
+      class="inline-flex h-input w-[504px] truncate rounded-full bg-gray-100 px-10 text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
+      placeholder="Alliteration"
+      aria-label="Choose a rhetorical device"
     />
-    <!-- <CaretUpDown
-      class="absolute end-3 top-1/2 size-6 -translate-y-1/2 text-muted-foreground"
-    /> -->
   </div>
 
   <Combobox.Content
