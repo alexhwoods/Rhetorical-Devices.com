@@ -1,36 +1,38 @@
 <script lang="ts">
   import { Combobox } from "bits-ui";
 
-  const fruits = [
-    { value: "mango", label: "Mango" },
-    { value: "watermelon", label: "Watermelon" },
-    { value: "apple", label: "Apple" },
-    { value: "pineapple", label: "Pineapple" },
-    { value: "orange", label: "Orange" },
+  const rhetoricalDevices = [
+    { value: "alliteration", label: "Alliteration" },
+    { value: "anaphora", label: "Anaphora" },
+    { value: "analogy", label: "Analogy" },
+    { value: "consonance", label: "Consonance" },
+    { value: "antithesis", label: "Antithesis" },
   ];
 
   let inputValue = "";
   let touchedInput = false;
   let contentIsOpen = false;
 
-  $: filteredFruits =
+  $: filteredRhetoricalDevices =
     inputValue && touchedInput
-      ? fruits.filter((fruit) => fruit.value.includes(inputValue.toLowerCase()))
-      : fruits;
+      ? rhetoricalDevices.filter((fruit) =>
+          fruit.value.includes(inputValue.toLowerCase())
+        )
+      : rhetoricalDevices;
 
   function handleSelectedChange(selected: { value: string } | undefined) {
     if (selected) {
-      window.location.href = `/fruits/${selected.value}`;
+      window.location.href = `/${selected.value}`;
     }
   }
 
-  function handleItemClick(fruit: { value: string }) {
-    window.location.href = `/fruits/${fruit.value}`;
+  function handleItemClick(rhetoricalDevice: { value: string }) {
+    window.location.href = `/${rhetoricalDevice.value}`;
   }
 </script>
 
 <Combobox.Root
-  items={filteredFruits}
+  items={filteredRhetoricalDevices}
   bind:inputValue
   bind:touchedInput
   onOpenChange={(isOpen) => {
@@ -68,14 +70,14 @@
   >
     <div class="border-[1px] border-gray-400 ml-9 mr-4"></div>
     <div class="pt-1 pb-2">
-      {#each filteredFruits as fruit (fruit.value)}
+      {#each filteredRhetoricalDevices as rhetoricalDevice (rhetoricalDevice.value)}
         <Combobox.Item
           class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none font-serif rounded-4 data-[highlighted]:bg-blue-100 hover:bg-blue-100 focus:bg-blue-100"
-          value={fruit.value}
-          label={fruit.label}
-          on:click={() => handleItemClick(fruit)}
+          value={rhetoricalDevice.value}
+          label={rhetoricalDevice.label}
+          on:click={() => handleItemClick(rhetoricalDevice)}
         >
-          {fruit.label}
+          {rhetoricalDevice.label}
           <Combobox.ItemIndicator class="ml-auto bg-red-500" asChild={false} />
         </Combobox.Item>
       {:else}
