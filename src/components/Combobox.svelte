@@ -64,7 +64,7 @@
     <Combobox.Input
       class="inline-flex h-input w-full truncate rounded-t-3xl {contentIsOpen
         ? 'rounded-b-none'
-        : 'rounded-b-3xl'} bg-gray-100 px-10 text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
+        : 'rounded-b-3xl'} bg-gray-100 px-10 text-md lg:text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
       placeholder="Alliteration"
       aria-label="Choose a rhetorical device"
     />
@@ -77,7 +77,7 @@
     <div class="pt-1 pb-2">
       {#each filteredRhetoricalDevices as rhetoricalDevice (rhetoricalDevice.value)}
         <Combobox.Item
-          class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none font-serif rounded-4 data-[highlighted]:bg-[#7AA6C440] hover:bg-[#7AA6C440] focus:bg-[#7AA6C440]"
+          class="flex h-10 w-full select-none items-center py-3 pl-10 pr-1.5 text-md lg:text-lg capitalize outline-none font-serif rounded-4 data-[highlighted]:bg-[#7AA6C440] hover:bg-[#7AA6C440] focus:bg-[#7AA6C440]"
           value={rhetoricalDevice.value}
           label={rhetoricalDevice.label}
           on:click={() => handleItemClick(rhetoricalDevice)}
