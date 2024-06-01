@@ -15,14 +15,7 @@ import ComboBox from "../components/Combobox.svelte";
 
   <body>
     <div class="container mx-auto p-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 pt-72">
-          <!-- Column 1 content goes here -->
-          <h2 class="text-5xl font-serif py-0 mb-[44px] w-96 leading-normal">
-            Speak Like Shakespeare
-          </h2>
-          <ComboBox client:load />
-        </div>
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
         <div class="p-4">
           <Image
             class="rounded-lg mt-24 ml-24"
@@ -31,6 +24,13 @@ import ComboBox from "../components/Combobox.svelte";
             width="450"
             alt="A bird sitting on a nest of eggs."
           />
+        </div>
+        <div class="p-4 pt-72 xl:order-first">
+          <!-- Column 1 content goes here -->
+          <h2 class="text-5xl font-serif py-0 mb-[44px] w-96 leading-normal">
+            Speak Like Shakespeare
+          </h2>
+          <ComboBox client:load />
         </div>
       </div>
     </div>
