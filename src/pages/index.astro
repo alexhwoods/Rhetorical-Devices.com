@@ -1,7 +1,36 @@
 ---
-import { Image } from "astro:assets";
+import { getImage } from "astro:assets";
+
 import Shakespeare from "../images/Shakespeare.jpg";
 import ComboBox from "../components/Combobox.svelte";
+
+const smImage = await getImage({
+  src: Shakespeare,
+  quality: "high",
+  width: 140,
+  height: 140,
+});
+
+const mdImage = await getImage({
+  src: Shakespeare,
+  quality: "high",
+  width: 140,
+  height: 140,
+});
+
+const lgImage = await getImage({
+  src: Shakespeare,
+  quality: "high",
+  width: 140,
+  height: 140,
+});
+
+const xlImage = await getImage({
+  src: Shakespeare,
+  format: "jpeg",
+  width: 500,
+  height: 500,
+});
 ---
 
 <html lang="en">
@@ -14,29 +43,29 @@ import ComboBox from "../components/Combobox.svelte";
   </head>
 
   <body>
-    <div class="container mx-auto p-4 sm:p-80 xl:p-4">
+    <div class="container mx-auto p-4">
       <div
-        class="grid grid-cols-1 xl:grid-cols-2 xl:gap-4 border-2 border-yellow-500"
+        class="grid grid-cols-1 xl:grid-cols-2 mt-4 border-2 border-yellow-500"
       >
-        <div class="p-4 flex justify-center xl:block">
-          <Image
-            class="rounded-lg sm:mt-80 xl:mt-48 xl:mt-24"
-            height="120"
-            width="120"
-            src={Shakespeare}
-            alt="An animated William Shakespeare."
-          />
+        <div class="flex justify-center xl:block">
+          <picture>
+            <!-- TODO: add one more -->
+            <source media="(max-width: 767px)" srcset={smImage.src} />
+            <source media="(max-width: 1023px)" srcset={mdImage.src} />
+            <source media="(max-width: 1279px)" srcset={lgImage.src} />
+            <source media="(min-width: 1280px)" srcset={xlImage.src} />
+            <img class="rounded" src={xlImage.src} alt="" />
+          </picture>
         </div>
-        <div class="p-4 xl:pt-72 xl:order-first">
-          <!-- Column 1 content goes here -->
-          <div class="flex justify-center xl:block">
-            <h2
-              class="text-3xl xl:text-5xl text-center xl:text-left font-serif py-0 mb-7 xl:mb-[44px] w-48 xl:w-96 leading-normal"
-            >
-              Speak Like Shakespeare
-            </h2>
-          </div>
-          <div class="xl:w-[504px]">
+        <div
+          class="p-4 flex flex-col items-center xl:items-start xl:pt-72 xl:order-first"
+        >
+          <h2
+            class="text-3xl xl:text-5xl text-center xl:text-left font-serif py-0 mb-7 xl:mb-[44px] w-48 xl:w-96 leading-normal"
+          >
+            Speak Like Shakespeare
+          </h2>
+          <div class="w-full max-w-xs xl:max-w-md">
             <ComboBox client:load />
           </div>
         </div>
