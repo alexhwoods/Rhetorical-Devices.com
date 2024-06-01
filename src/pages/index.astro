@@ -29,8 +29,8 @@ const lgImage = await getImage({
 const xlImage = await getImage({
   src: Shakespeare,
   quality: "high",
-  width: 400,
-  height: 400,
+  width: 500,
+  height: 500,
 });
 ---
 
@@ -55,18 +55,18 @@ const xlImage = await getImage({
             <source media="(max-width: 1023px)" srcset={mdImage.src} />
             <source media="(max-width: 1279px)" srcset={lgImage.src} />
             <source media="(min-width: 1280px)" srcset={xlImage.src} />
-            <img class="xl:mt-32 xl:ml-32 rounded" src={xlImage.src} alt="" />
+            <img class="xl:mt-32 xl:ml-28 rounded" src={xlImage.src} alt="" />
           </picture>
         </div>
         <div
-          class="p-4 flex flex-col items-center xl:items-start xl:pt-72 xl:order-first"
+          class="p-4 flex flex-col items-center xl:items-start xl:pt-64 xl:order-first"
         >
           <h2
-            class="text-3xl xl:text-5xl text-center xl:text-left font-serif py-0 mb-7 xl:mb-[44px] w-48 xl:w-96 xl:leading-normal"
+            class="text-3xl xl:text-6xl text-center xl:text-left font-serif py-0 mb-7 xl:mb-[44px] w-48 xl:w-96 xl:leading-normal"
           >
             Speak Like Shakespeare
           </h2>
-          <div class="w-full sm:max-w-md md:max-w-lg xl:max-w-md">
+          <div class="w-full sm:max-w-md md:max-w-lg xl:max-w-xl">
             <ComboBox client:load />
           </div>
         </div>
