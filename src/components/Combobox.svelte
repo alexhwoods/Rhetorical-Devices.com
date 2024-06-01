@@ -77,7 +77,7 @@
     <div class="pt-1 pb-2">
       {#each filteredRhetoricalDevices as rhetoricalDevice (rhetoricalDevice.value)}
         <Combobox.Item
-          class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none font-serif rounded-4 data-[highlighted]:bg-blue-100 hover:bg-blue-100 focus:bg-blue-100"
+          class="flex h-10 w-full select-none items-center py-3 pl-9 pr-1.5 text-lg capitalize outline-none font-serif rounded-4 data-[highlighted]:bg-[#7AA6C440] hover:bg-[#7AA6C440] focus:bg-[#7AA6C440]"
           value={rhetoricalDevice.value}
           label={rhetoricalDevice.label}
           on:click={() => handleItemClick(rhetoricalDevice)}
