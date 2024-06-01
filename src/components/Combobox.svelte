@@ -62,7 +62,7 @@
       </g>
     </svg>
     <Combobox.Input
-      class="inline-flex h-input w-[504px] truncate rounded-t-3xl {contentIsOpen
+      class="inline-flex h-input w-full truncate rounded-t-3xl {contentIsOpen
         ? 'rounded-b-none'
         : 'rounded-b-3xl'} bg-gray-100 px-10 text-lg transition-colors placeholder:text-gray-800/50 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 focus:ring-offset-background font-serif"
       placeholder="Alliteration"
