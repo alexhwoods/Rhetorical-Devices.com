@@ -6,33 +6,14 @@
 
   import { Combobox } from "bits-ui";
 
-  const rhetoricalDevices = [
-    { value: "alliteration", label: "Alliteration" },
-    { value: "anaphora", label: "Anaphora" },
-    { value: "analogy", label: "Analogy" },
-    { value: "consonance", label: "Consonance" },
-    { value: "antithesis", label: "Antithesis" },
-    { value: "anadiplosis", label: "Anadiplosis" },
-    { value: "epistrophe", label: "Epistrophe" },
-    { value: "epizeuxis", label: "Epizeuxis" },
-    { value: "euphemism", label: "Euphemism" },
-    { value: "hyperbole", label: "Hyperbole" },
-    { value: "irony", label: "Irony" },
-    { value: "litotes", label: "Litotes" },
-    { value: "metaphor", label: "Metaphor" },
-    { value: "metonymy", label: "Metonymy" },
-    { value: "onomatopoeia", label: "Onomatopoeia" },
-    { value: "oxymoron", label: "Oxymoron" },
-    { value: "paradox", label: "Paradox" },
-    { value: "parallelism", label: "Parallelism" },
-    { value: "personification", label: "Personification" },
-    { value: "pun", label: "Pun" },
-    { value: "repetition", label: "Repetition" },
-    { value: "rhetorical-question", label: "Rhetorical Question" },
-    { value: "simile", label: "Simile" },
-    { value: "synecdoche", label: "Synecdoche" },
+  type RhetoricalDevice = {
+    value: string;
+    label: string;
+  };
+
+  // define a prop
+  export let rhetoricalDevices: RhetoricalDevice[] = [
     { value: "tmesis", label: "Tmesis" },
-    { value: "tricolon", label: "Tricolon" },
     { value: "zeugma", label: "Zeugma" },
   ];
 
@@ -54,7 +35,7 @@
   }
 
   function handleItemClick(rhetoricalDevice: { value: string }) {
-    window.location.href = `/${rhetoricalDevice.value}`;
+    window.location.href = rhetoricalDevice.value;
   }
 </script>
 

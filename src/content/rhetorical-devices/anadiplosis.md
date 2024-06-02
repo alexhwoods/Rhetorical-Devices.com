@@ -1,7 +1,7 @@
 ---
 title: "Anadiplosis"
 description: "Learn about anadiplosis, a literary device."
-keywords: "anadiplosis, rhetorical devices"
+keywords: [anadiplosis, rhetorical devices]
 layout: ../layouts/rhetorical-device.astro
 ---
 

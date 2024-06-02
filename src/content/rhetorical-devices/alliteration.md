@@ -1,8 +1,8 @@
 ---
 title: "Alliteration"
 description: "Perhaps the simplest and most common rhetorical device, alliteration is the repetition of the same letter or sound at the beginning of nearby words."
-keywords: "alliteration, rhetorical devices"
-layout: ../layouts/rhetorical-device.astro
+keywords: [alliteration, rhetorical devices]
+layout: ../../layouts/rhetorical-device.astro
 ---
 
 Perhaps the simplest and most common rhetorical device, alliteration is the repetition of the same letter or sound at the beginning of nearby words.

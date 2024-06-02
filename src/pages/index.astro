@@ -1,15 +1,28 @@
 ---
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 
 import Shakespeare from "../images/Shakespeare.jpg";
 import ComboBox from "../components/Combobox.svelte";
+
+// @todo: There should be type safety here
+const collection = await getCollection("rhetorical-devices");
+
+const rhetoricalDevices = collection.map(
+  (device: { slug: any; data: { title: any } }) => {
+    return {
+      value: `devices/${device.slug}`,
+      label: device.data.title,
+    };
+  }
+);
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/jpg" href="/Shakespeare-small.jpg" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro + TailwindCSS</title>
   </head>
@@ -35,7 +48,7 @@ import ComboBox from "../components/Combobox.svelte";
             Speak Like Shakespeare
           </h2>
           <div class="w-full sm:max-w-md md:max-w-lg xl:max-w-xl">
-            <ComboBox client:load />
+            <ComboBox rhetoricalDevices={rhetoricalDevices} client:load />
           </div>
         </div>
       </div>

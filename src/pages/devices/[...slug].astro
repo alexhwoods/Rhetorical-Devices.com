@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const rhetoricalDevicesEntries = await getCollection("rhetorical-devices");
+  return rhetoricalDevicesEntries.map((entry: { slug: any }) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { entry } = Astro.props;
+// @ts-ignore
+const { Content } = await entry.render();
+---
+
+<Content />
