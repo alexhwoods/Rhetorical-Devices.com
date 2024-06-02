@@ -93,7 +93,7 @@
   </div>
 
   <Combobox.Content
-    class="w-full rounded-b-3xl bg-gray-100 outline-none overflow-hidden"
+    class="w-full rounded-b-3xl bg-gray-100 outline-none overflow-y-auto max-h-[300px] shadow-lg z-10 scrollbar-none"
   >
     <div class="border-[1px] border-gray-400 mx-4"></div>
     <div class="pt-1 pb-2">
