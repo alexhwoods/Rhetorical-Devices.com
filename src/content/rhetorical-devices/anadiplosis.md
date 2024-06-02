@@ -2,7 +2,7 @@
 title: "Anadiplosis"
 description: "Learn about anadiplosis, a literary device."
 keywords: [anadiplosis, rhetorical devices]
-layout: ../layouts/rhetorical-device.astro
+layout: ../../layouts/rhetorical-device.astro
 ---
 
 Anadiplosis is repeating the last word of a phrase as the first word in the next one. It comes from the Greek word for folding, _diploun_, which is also the root of the word "diploma."
