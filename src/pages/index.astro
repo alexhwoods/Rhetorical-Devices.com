@@ -1,37 +1,8 @@
 ---
-import { getImage } from "astro:assets";
+import { Image } from "astro:assets";
 
 import Shakespeare from "../images/Shakespeare.jpg";
 import ComboBox from "../components/Combobox.svelte";
-
-// these are actually kind of wrong. I think they're one off in name
-const smImage = await getImage({
-  src: Shakespeare,
-  quality: "high",
-  width: 50,
-  height: 50,
-});
-
-const mdImage = await getImage({
-  src: Shakespeare,
-  quality: "high",
-  width: 60,
-  height: 60,
-});
-
-const lgImage = await getImage({
-  src: Shakespeare,
-  quality: "high",
-  width: 90,
-  height: 90,
-});
-
-const xlImage = await getImage({
-  src: Shakespeare,
-  quality: "high",
-  width: 500,
-  height: 500,
-});
 ---
 
 <html lang="en">
@@ -49,14 +20,11 @@ const xlImage = await getImage({
         class="grid grid-cols-1 xl:grid-cols-2 mt-9 xl:mt-2 sm:mt-16 lg:mt-32"
       >
         <div class="flex justify-center xl:block">
-          <picture>
-            <!-- TODO: add one more -->
-            <source media="(max-width: 767px)" srcset={smImage.src} />
-            <source media="(max-width: 1023px)" srcset={mdImage.src} />
-            <source media="(max-width: 1279px)" srcset={lgImage.src} />
-            <source media="(min-width: 1280px)" srcset={xlImage.src} />
-            <img class="xl:mt-32 xl:ml-28 rounded" src={xlImage.src} alt="" />
-          </picture>
+          <Image
+            class="xl:mt-32 xl:ml-28 max-w-[60px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[120px] xl:max-w-[500px] rounded"
+            src={Shakespeare}
+            alt="Shakespeare"
+          />
         </div>
         <div
           class="p-4 flex flex-col items-center xl:items-start xl:pt-64 xl:order-first"
