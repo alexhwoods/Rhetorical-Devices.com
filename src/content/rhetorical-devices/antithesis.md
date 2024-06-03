@@ -1,7 +1,7 @@
 ---
 title: "Antithesis"
 description: "Learn about antithesis, a rhetorical device."
-keywords: [alliteration, rhetorical devices]
+keywords: [antithesis, rhetorical devices]
 layout: ../../layouts/rhetorical-device.astro
 ---
 
