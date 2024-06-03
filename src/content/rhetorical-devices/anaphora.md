@@ -11,13 +11,13 @@ Of all the rhetorical devices, anaphora may be the most powerful. Let's look at 
 
 After the evacuation of Dunkirk, Winston Churchill gave his "We shall never surrender" speech:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MkTw3_PmKtc?si=YCQ76tyj6NKlHa6m&amp;start=76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/MkTw3_PmKtc?si=YCQ76tyj6NKlHa6m&amp;start=76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## I have a dream
 
 Also Martin Luther King's "I Have a Dream" speech:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vP4iY1TtS3s?si=i0Hgy3EfyEnkWkZ-&amp;start=114" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/vP4iY1TtS3s?si=i0Hgy3EfyEnkWkZ-&amp;start=114" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br />
 <br />
