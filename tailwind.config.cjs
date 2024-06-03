@@ -60,6 +60,7 @@ export default {
                 boxShadow: `0 0 0 2px #7AA6C4`,
                 borderRadius: theme("borderRadius.button"),
               },
+              color: "#688A9E",
             },
           },
         },
