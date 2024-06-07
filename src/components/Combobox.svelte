@@ -75,6 +75,8 @@
 
   <Combobox.Content
     class="w-full rounded-b-3xl bg-gray-100 outline-none overflow-y-auto max-h-[300px] shadow-lg z-10 scrollbar-none"
+    side="bottom"
+    avoidCollisions={false}
   >
     <div class="border-[1px] border-gray-400 mx-4"></div>
     <div class="pt-1 pb-2">
