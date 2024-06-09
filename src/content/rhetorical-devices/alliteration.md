@@ -13,8 +13,6 @@ Perhaps the simplest and most common rhetorical device, alliteration is the repe
 
 When alliteration is overdone, it grinds my gears. One must be subtle, otherwise the phrase can turn into a tongue twister.
 
-Alliteration is closely related to [consonance](/devices/consonance) and [assonance](/devices/assonance).
-
 ### Sources
 
 - [We Are Teachers](https://www.weareteachers.com/alliteration-examples/)
