@@ -5,4 +5,9 @@ keywords: [pleonasm, rhetorical devices]
 layout: ../../layouts/rhetorical-device.astro
 ---
 
-TODO
+A small amount of unnecessary redundancy.
+
+- _I saw it with my own eyes._
+- _My personal opinion_
+- true fact
+- free gift
