@@ -15,4 +15,6 @@ Sometimes, we don't finish sentences because the ending is obvious.
 
 - When in Rome...
 
-In Portuguese they have a wonderful idiom: "Pra um bom entendedor, meia palavra basta." For a good listener, half a word is enough.
+My favorite example of aposiopesis comes from Portuguese.
+
+They have a wonderful idiom: "Pra um bom entendedor, meia palavra basta." For a good listener, half a word is enough. And then of course people just say, "For a good listener...".
