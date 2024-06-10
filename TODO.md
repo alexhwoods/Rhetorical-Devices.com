@@ -1,3 +1,3 @@
-- [ ] Purge unwanted CSS
-- [ ] Do a production build and make sure it's tiny
-- [ ] SEO!!!
+- [ ] Inconsistent use of italics
+- [ ] Finish Elements of Eloquence
+- [ ] corner rounding of images and videos
