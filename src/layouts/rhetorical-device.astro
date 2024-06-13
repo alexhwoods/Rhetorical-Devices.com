@@ -4,7 +4,7 @@ import { ViewTransitions } from "astro:transitions";
 import Button from "../components/Button.astro";
 ---
 
-<html lang="en">
+<html lang="en" transition:animate="fade">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -40,10 +40,10 @@ import Button from "../components/Button.astro";
         <slot />
       </div>
     </div>
+    <style>
+      .prose {
+        max-width: none;
+      }
+    </style>
   </body><!-- @todo: handle wide monitor -->
-  <style>
-    .prose {
-      max-width: none;
-    }
-  </style>
 </html>

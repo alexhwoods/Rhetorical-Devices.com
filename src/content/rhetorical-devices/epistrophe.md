@@ -5,7 +5,7 @@ keywords: [epistrophe, rhetorical devices]
 layout: ../../layouts/rhetorical-device.astro
 ---
 
-The opposite of [anaphora](/rhetorical-devices/anaphora), epistrophe is where you repeat a word or phrase at the end of successive clauses or sentences.
+The opposite of [anaphora](/devices/anaphora), epistrophe is where you repeat a word or phrase at the end of successive clauses or sentences.
 
 - _When I was a child, I spoke as a child, I understood as a child, I thought as a child_ (1 Corinthians 13:11)
 - I swear to tell the truth, the whole truth, and nothing but the truth.
