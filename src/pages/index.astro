@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 
 import Shakespeare from "../images/Shakespeare-optimized.jpg";
 import ComboBox from "../components/Combobox.svelte";
+import { ViewTransitions } from "astro:transitions";
 
 // @todo: There should be type safety here
 const collection = await getCollection("rhetorical-devices");
@@ -26,6 +27,7 @@ const rhetoricalDevices = collection.map(
     <meta name="description" content="Learn about rhetorical devices." />
     <meta name="generator" content={Astro.generator} />
     <title>Rhetorical Devices</title>
+    <ViewTransitions />
   </head>
 
   <body>

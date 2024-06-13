@@ -1,5 +1,6 @@
 ---
 const { content } = Astro.props;
+import { ViewTransitions } from "astro:transitions";
 import Button from "../components/Button.astro";
 ---
 
@@ -11,6 +12,7 @@ import Button from "../components/Button.astro";
     <meta name="keywords" content={content.keywords} />
     <link rel="icon" type="image/jpg" href="/Shakespeare-small.jpg" />
     <title>{content.title}</title>
+    <ViewTransitions />
   </head>
   <body class="font-serif flex justify-center min-h-screen">
     <div
@@ -38,13 +40,10 @@ import Button from "../components/Button.astro";
         <slot />
       </div>
     </div>
-  </body>
+  </body><!-- @todo: handle wide monitor -->
+  <style>
+    .prose {
+      max-width: none;
+    }
+  </style>
 </html>
-
-<!-- @todo: handle wide monitor -->
-
-<style>
-  .prose {
-    max-width: none;
-  }
-</style>
